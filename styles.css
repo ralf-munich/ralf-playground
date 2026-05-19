@@ -4,44 +4,48 @@
 
 body {
   margin: 0;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-family: Arial, sans-serif;
   background-color: #f5f7fb;
   color: #1f2937;
 }
 
 .container {
-  width: min(90%, 600px);
-  text-align: center;
-  background: #ffffff;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  width: min(92%, 760px);
+  margin: 2rem auto;
 }
 
 h1 {
-  margin-top: 0;
+  margin: 0 0 1.25rem;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 1rem;
   margin-bottom: 1rem;
 }
 
-p {
-  margin-bottom: 1.5rem;
-  line-height: 1.6;
+.card h2 {
+  margin: 0;
+  font-size: 1.1rem;
 }
 
-button {
-  border: none;
-  background-color: #2563eb;
-  color: #ffffff;
-  padding: 0.7rem 1.1rem;
-  border-radius: 8px;
-  font-size: 1rem;
-  cursor: pointer;
+.hint,
+#file-name,
+.placeholder p {
+  margin: 0.5rem 0 0;
+  color: #4b5563;
 }
 
-button:hover {
-  background-color: #1d4ed8;
+.upload-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.upload-label {
+  font-weight: 600;
 }

@@ -3,14 +3,37 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ralf's Playground</title>
+  <title>Temm Consult Workflow</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <main class="container">
-    <h1>Ralf's Playground</h1>
-    <p id="intro-text">Welcome! This is a simple personal webpage where I can try ideas and learn by building.</p>
-    <button id="change-text-btn">Change Intro Text</button>
+    <h1>Temm Consult Workflow</h1>
+
+    <section class="card" aria-labelledby="audio-upload-title">
+      <h2 id="audio-upload-title">Audio Upload</h2>
+      <p class="hint">Upload a meeting recording (MVP placeholder only).</p>
+      <div class="upload-row">
+        <label for="audio-file" class="upload-label">Choose audio file</label>
+        <input id="audio-file" type="file" accept="audio/*" aria-describedby="file-name" />
+      </div>
+      <p id="file-name" aria-live="polite">No file selected.</p>
+    </section>
+
+    <section class="card placeholder" aria-labelledby="transcript-title">
+      <h2 id="transcript-title">Transcript</h2>
+      <p>Transcript output will appear here in a future step.</p>
+    </section>
+
+    <section class="card placeholder" aria-labelledby="notes-title">
+      <h2 id="notes-title">Meeting Notes</h2>
+      <p>Structured meeting notes will appear here in a future step.</p>
+    </section>
+
+    <section class="card placeholder" aria-labelledby="word-export-title">
+      <h2 id="word-export-title">Word Export</h2>
+      <p>Word export options will appear here in a future step.</p>
+    </section>
   </main>
 
   <script src="script.js"></script>
