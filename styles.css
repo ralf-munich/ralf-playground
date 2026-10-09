@@ -4,109 +4,48 @@
 
 body {
   margin: 0;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-family: Arial, sans-serif;
-  background: linear-gradient(180deg, #f5f7fb 0%, #eef3f9 100%);
+  background-color: #f5f7fb;
   color: #1f2937;
-  padding: 2rem 1rem;
 }
 
 .container {
-  width: min(95%, 900px);
-  background: #ffffff;
-  border: 1px solid #e5e7eb;
-  border-radius: 14px;
-  box-shadow: 0 14px 34px rgba(15, 23, 42, 0.08);
-  padding: 2rem;
+  width: min(92%, 760px);
+  margin: 2rem auto;
 }
 
-.hero {
-  text-align: center;
-  padding-bottom: 1.25rem;
-  border-bottom: 1px solid #e5e7eb;
-}
-
-.hero h1 {
-  margin: 0 0 0.8rem;
-}
-
-.hero-intro {
-  max-width: 620px;
-  margin: 0 auto 0.6rem;
-  line-height: 1.6;
-}
-
-.hero-note {
-  margin: 0 0 1.4rem;
-  color: #4b5563;
-}
-
-button {
-  border: 1px solid #1d4ed8;
-  background-color: #2563eb;
-  color: #ffffff;
-  padding: 0.7rem 1.1rem;
-  border-radius: 8px;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #1d4ed8;
-}
-
-.experiments {
-  margin-top: 1.8rem;
-}
-
-.experiments h2 {
-  margin: 0 0 1rem;
-  text-align: center;
-}
-
-.cards {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: 1fr;
+h1 {
+  margin: 0 0 1.25rem;
 }
 
 .card {
-  border: 1px solid #dbe2ea;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
   border-radius: 10px;
   padding: 1rem;
-  background-color: #fafcff;
-  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.05);
+  margin-bottom: 1rem;
 }
 
-.card h3 {
-  margin: 0 0 0.45rem;
-}
-
-.card p {
+.card h2 {
   margin: 0;
-  line-height: 1.5;
-  color: #374151;
+  font-size: 1.1rem;
 }
 
-.site-footer {
-  margin-top: 2rem;
-  padding-top: 1rem;
-  border-top: 1px solid #e5e7eb;
-  text-align: center;
-  color: #6b7280;
-  font-size: 0.95rem;
+.hint,
+#file-name,
+.placeholder p {
+  margin: 0.5rem 0 0;
+  color: #4b5563;
 }
 
-.site-footer p {
-  margin: 0;
+.upload-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  margin-top: 0.5rem;
 }
 
-@media (min-width: 760px) {
-  .cards {
-    grid-template-columns: repeat(3, 1fr);
-  }
+.upload-label {
+  font-weight: 600;
 }
